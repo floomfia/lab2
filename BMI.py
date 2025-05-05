@@ -10,14 +10,15 @@ def calculate_BMI ():
     return BMI
 def check_bmi(bmi_value):
     if bmi_value<18.5:
-        print ("you are underweight")\
+        print ("you are underweight")
+        return -1
         
     elif bmi_value >18.5 or bmi_value < 25.0:
         print ("you are moderate weight")
-
+        return 0
     else :
         print ("you are overweight")
-        
+        return 1
 
 
 def main():
